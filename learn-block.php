@@ -27,6 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function create_block_learn_block_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/learn-block' );
 	register_block_type( __DIR__ . '/build/blocks/copyright-date' );
+	register_block_type( __DIR__ . '/build/blocks/dynamic-block' );
 
 }
 add_action( 'init', 'create_block_learn_block_block_init' );
