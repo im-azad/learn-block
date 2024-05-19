@@ -26,7 +26,7 @@ var __webpack_exports__ = {};
  */
 
 /* eslint-disable no-console */
-console.log('Testing');
+
 /* eslint-enable no-console */
 /******/ })()
 ;

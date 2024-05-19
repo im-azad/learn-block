@@ -25,9 +25,16 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_learn_block_block_init() {
-	register_block_type( __DIR__ . '/build/blocks/learn-block' );
-	register_block_type( __DIR__ . '/build/blocks/copyright-date' );
-	register_block_type( __DIR__ . '/build/blocks/dynamic-block' );
+	$blocks = [
+		"learn-block",
+		"copyright-date",
+		"dynamic-block",
+	];
+
+	// Register blocks.
+	foreach( $blocks as $block ) {
+		register_block_type( __DIR__ . '/build/blocks/' . $block );
+	}
 
 }
 add_action( 'init', 'create_block_learn_block_block_init' );

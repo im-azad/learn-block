@@ -21,5 +21,5 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Testing' );
+
 /* eslint-enable no-console */
